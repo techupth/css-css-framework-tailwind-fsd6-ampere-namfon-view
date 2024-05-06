@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <div
+      class="bg-slate-200 flex justify-center items-center absolute right-0 top-0 bottom-50 left-0 w-100 h-100 h-lvh"
+    >
+      <form class="bg-white rounded-xl flex flex-col gap-5 px-5 pt-10 pb-5">
+        <header class="text-zinc-600 text-xl">Login to Website</header>
+        <div class="flex flex-row justify-evenly gap-7">
+          <label>Email</label>
+          <input
+            class="border-zinc-600 border p-2 hover:border-violet-500 focus:outline-none border-violet-300 rounded-lg"
+            type="email"
+            placeholder="Enter your email..."
+          />
+        </div>
+        <div class="flex flex-row justify-evenly">
+          <label>Password</label>
+          <input
+            class="border-zinc-600 border p-2 hover:border-violet-500 focus:outline-none border-violet-300 rounded-lg"
+            type="password"
+            placeholder="Enter your password..."
+          />
+        </div>
+        <div class="flex justify-center gap-2">
+          <button
+            class="w-36 p-2 bg-violet-500 rounded-full text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 ring-violet-300"
+            type="submit"
+          >
+            Sign In
+          </button>
+          <button
+            class="w-36 p-2 rounded-full bg-white hover:bg-violet-100 focus:ring-2 ring-violet-300 text-violet-600"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
