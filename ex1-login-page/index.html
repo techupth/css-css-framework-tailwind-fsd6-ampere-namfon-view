@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="bg-slate-200 flex justify-center items-center h-lvh p-2">
+    <form id="container" class="bg-white rounded-xl flex-col">
+      <h1 class="text-xl text-zinc-600 p-2 m-2">Login to Website</h1>
+      <div class="flex-row justify-between p-2 m-2">
+        <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          id="email"
+          type="email"
+          class="rounded-xl border border-zinc-300 p-2 hover:border-violet-500 focus:outline-none focus:border-violet-600"
+        />
+      </div>
+      <div class="flex-row justify-start p-2 m-2">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="rounded-xl border p-2 border-zinc-300 hover:border-violet-500 focus:outline-none border-violet-600"
+        />
+      </div>
+      <div class="p-2 m-3">
+        <button
+          class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring ring-violet-300"
+        >
+          Sign in</button
+        ><button
+          class="w-36 p-2 rounded-full text-violet-600 bg-white hover:bg-violet-100 focus:ring ring-violet-300"
+        >
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </body>
 </html>
